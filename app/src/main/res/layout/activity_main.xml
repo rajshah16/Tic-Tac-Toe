@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/st"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/headings"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/grid" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="411dp"
+        android:layout_height="386dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imageview0"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playertap"
+                android:tag="0" />
+
+            <ImageView
+                android:id="@+id/imageview1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playertap"
+                android:tag="1" />
+
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playertap"
+                android:tag="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imageview3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playertap"
+                android:tag="3" />
+
+            <ImageView
+                android:id="@+id/imageview4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playertap"
+                android:tag="4" />
+
+            <ImageView
+                android:id="@+id/imageview5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playertap"
+                android:tag="5" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp">
+
+            <ImageView
+                android:id="@+id/imageview6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playertap"
+                android:tag="6" />
+
+            <ImageView
+
+                android:id="@+id/imageview7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playertap"
+                android:tag="7" />
+
+            <ImageView
+                android:id="@+id/imageview8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="playertap"
+                android:tag="8" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="X turn - Tap to play "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
